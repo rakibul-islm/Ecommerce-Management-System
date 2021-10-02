@@ -1,0 +1,116 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container{
+    height: 100%;
+    align-content: center;
+}
+
+.card{
+    height: 10px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 600px;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+
+
+.card-header h3{
+    color:darkgoldenrod;
+    text-align: center;
+}
+
+
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+
+
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 460px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.links{
+    color: rgb(58, 56, 56);
+    font-size: 15px;
+}
+
+.links a{
+    margin-left: 4px;
+}
+
+/*Registration*/
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-facebook:hover{
+    color: black;
+    background-color: rgb(200, 213, 253);
+}
+.btn-google {
+    background-color: orange;
+    color: #fff;
+}
+.btn-google:hover{
+    color: black;
+    background-color: rgb(253, 200, 200);
+}
+
+.error {
+    color: red;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 90%;
+}

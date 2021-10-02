@@ -1,0 +1,32 @@
+<h3 style="text-align: center; background-color: burlywood;width: 20%; border-radius: 10px;">Product List</h3>
+<table class="table table-hover table-sm" >
+  <thead class="thead-light ">
+  <tr>
+    <th scope="col">Pr_ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Products</th>
+    <th scope="col">Price</th>
+    <th scope="col">Quantity</th>
+    <th scope="col">Description</th>
+    <th scope="col"> Action</th>
+  </tr>
+</thead>
+
+  <tr *ngFor="let std of studentService.allStudent ">
+    <td>{{std.id}}</td>
+    <td>{{std.title}}</td>
+    <td>{{std.short_desc}}</td>
+    <td>{{std.price}}</td>
+    <td>{{std.quantity}}</td>
+    <td>{{std.description}}</td>
+    <td>
+      <a class="btn text-warning" (click)="editStudent(std)">
+        <i class="fa fa-edit"></i>
+      </a>
+
+      <a class="btn text-danger" (click)="deleteStudent(std.id)">
+        <i class="fa fa-trash"></i>
+      </a>
+    </td>
+  </tr>
+</table>

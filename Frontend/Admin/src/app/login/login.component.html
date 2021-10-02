@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+          <h3>Log In</h3><br>
+
+          <p><a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+          </p>
+          <div class="form-group mx-sm-3 mb-2" role="group" aria-label="First group" style="color:green">
+
+            <p style="color: aqua">
+            <p>
+
+          </div>
+          <p class="divider-text">
+            <span class="bg-light">OR</span>
+          </p>
+
+
+
+          <form class="form-horizontal" method="post">
+            <div class="error" id="nameError"></div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+              </div>
+              <input class="form-control" placeholder="Email" type="text" name="uname" required>
+
+            </div>
+            
+            
+            <!-- form-group// -->
+            <div class="error" id="rpassError"></div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+              </div>
+              <input class="form-control" placeholder="Password" type="password" name="rpass" required>
+
+            </div><br>
+            <!-- form-group// -->
+            <div class="form-group">
+              <input type="submit" name="submit" value="Log In Now" class="btn btn-primary btn-block" routerLink="/admin">
+            </div> <!-- form-group// -->
+
+            <div class="card-footer">
+              <div class="d-flex justify-content-center links">
+                Have no account? <a routerLink="/registration" ><b>Sign Up</b></a>
+              </div>
+
+            </div>
+          </form>
+        </article>
+      </div> <!-- card.// -->
+
+    </div>
+  </div>
+</div>

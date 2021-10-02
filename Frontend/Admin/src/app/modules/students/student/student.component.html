@@ -1,0 +1,58 @@
+
+
+<div class="std-form">
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <input placeholder="Name" class="form-control" [(ngModel)]="studentService.currentStudent.title">
+    </div>
+
+    <div class="col-md-3 form-group">
+      <input placeholder="Product" class="form-control" [(ngModel)]="studentService.currentStudent.short_desc">
+    </div>
+
+    <div class="col-md-3 form-group">
+      <input placeholder="Price" class="form-control" [(ngModel)]="studentService.currentStudent.price">
+    </div>
+
+    <div class="col-md-3 form-group">
+      <input placeholder="Quantity" class="form-control" [(ngModel)]="studentService.currentStudent.quantity">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 form-group">
+      <input placeholder="Description" class="form-control" [(ngModel)]="studentService.currentStudent.description">
+    </div>
+
+    <div class="col-md-3 form-group">
+      <input placeholder="Image" class="form-control" [(ngModel)]="studentService.currentStudent.image">
+    </div>
+
+    <div class="col-md-3 form-group">
+      <input placeholder="Images (Optional)" class="form-control" [(ngModel)]="studentService.currentStudent.images">
+    </div>
+    
+    <div class="col-md-3 form-group">
+      <input placeholder="Category ID (Optional)" class="form-control" [(ngModel)]="studentService.currentStudent.cat_id">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-success btn-lg btn-block" (click)="createOrUpdateStudent(studentService.currentStudent)">
+        <i class="fa fa-save"></i>
+        SAVE INFORMATION
+      </button>
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-primary btn-lg btn-block" (click)="clearStudent()">
+        <i class="fa fa-retweet"></i>
+        CLEAR INFORMATION
+      </button>
+    </div>
+  </div>
+</div><br>
+
+  

@@ -1,0 +1,44 @@
+<div class="container">
+
+  <h4 style="text-decoration: underline;color: goldenrod;">Accepted Order List</h4>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-hover table-sm">
+        <thead class="thead-light ">
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Order ID</th>
+            <th scope="col">Product ID</th>
+            <th scope="col">Quantity</th>
+            <th scope="col"> Product Delivered</th>
+            <th scope="col"> Product Returned</th>
+          </tr>
+        </thead>
+
+        <tr *ngFor="let od of studentService.allAcceptedOrder ">
+          <td>{{od.date}}</td>
+          <td>{{od.time}}</td>
+          <td>{{od.order_id}}</td>
+          <td>{{od.product_id}}</td>
+          <td>{{od.quantity}}</td>
+          <td>
+            <a class="btn text-success"  (click)="createReport(od.id)"  >
+              <i class="fa fa-spinner"></i> Delivered !
+            </a>
+          </td>
+          <td>
+            <a class="btn text-danger" (click)="deleteAcceptedOrders(od.id)">
+              <i class="fa fa-remove"></i> Returned !
+            </a>
+          </td>         
+        </tr>
+      </table>
+
+
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
